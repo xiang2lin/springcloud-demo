@@ -1,0 +1,8 @@
+spring: 
+  cloud: 
+    config: 
+      name: microservicecloud-config-eureka-client     #需要从github上读取的资源名称，注意没有yml后缀名
+      profile: dev   #dev  和test可以切换
+      label: master  #主分支
+      uri: http://config3344.com:3344      #SpringCloudConfig获取的服务地址,   配置中心 把配置文件放在git上 统一管理
+
